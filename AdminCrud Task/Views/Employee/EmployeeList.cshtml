@@ -1,0 +1,32 @@
+﻿@model List<CRUD.EF.employee>
+@{
+    ViewBag.Title = "EmployeeList";
+}
+
+<table class="table table-hover">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Gender</th>
+        <th>Contact</th>
+    </tr>
+
+    @foreach(var e in Model)
+            {
+        <tr>
+            <td>@e.Id</td>
+            <td>@e.Name</td>
+            <td>@e.Email</td>
+            <td>@e.Gender</td>
+            <td>@e.Contact</td>
+
+            <td>
+                <a href="@Url.Action("Student", new {e.Id,e.Name,e.Email,e.Gender,e.Contact})" class="btn btn-success">Edit</a>
+                <a href="@Url.Action("Delete", new {e.Id})" class="btn btn-danger">Delete</a>
+            </td>
+
+        </tr>
+
+            }
+</table>
