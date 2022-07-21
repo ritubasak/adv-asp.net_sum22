@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="FundModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tbl_donation">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserName" Type="varchar" MaxLength="50" />
+          <Property Name="Ammount" Type="int" />
+        </EntityType>
+        <EntityType Name="Tbl_Donor">
+          <Key>
+            <PropertyRef Name="dnId" />
+          </Key>
+          <Property Name="dnId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="dnName" Type="varchar" MaxLength="150" />
+          <Property Name="dnUserName" Type="varchar" MaxLength="150" />
+          <Property Name="dnEmail" Type="varchar" MaxLength="150" />
+          <Property Name="dnGender" Type="varchar" MaxLength="150" />
+          <Property Name="dnPassword" Type="varchar" MaxLength="150" />
+        </EntityType>
+        <EntityContainer Name="FundModelStoreContainer">
+          <EntitySet Name="tbl_donation" EntityType="Self.tbl_donation" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Tbl_Donor" EntityType="Self.Tbl_Donor" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="FundModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Tbl_Donor">
+          <Key>
+            <PropertyRef Name="dnId" />
+          </Key>
+          <Property Name="dnId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="dnName" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="dnUserName" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="dnEmail" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="dnGender" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="dnPassword" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="FundEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Tbl_Donor" EntityType="Self.Tbl_Donor" />
+          <EntitySet Name="tbl_donation" EntityType="FundModel.tbl_donation" />
+        </EntityContainer>
+        <EntityType Name="tbl_donation">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Ammount" Type="Int32" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="FundModelStoreContainer" CdmEntityContainer="FundEntities">
+          <EntitySetMapping Name="Tbl_Donor">
+            <EntityTypeMapping TypeName="FundModel.Tbl_Donor">
+              <MappingFragment StoreEntitySet="Tbl_Donor">
+                <ScalarProperty Name="dnId" ColumnName="dnId" />
+                <ScalarProperty Name="dnName" ColumnName="dnName" />
+                <ScalarProperty Name="dnUserName" ColumnName="dnUserName" />
+                <ScalarProperty Name="dnEmail" ColumnName="dnEmail" />
+                <ScalarProperty Name="dnGender" ColumnName="dnGender" />
+                <ScalarProperty Name="dnPassword" ColumnName="dnPassword" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_donation">
+            <EntityTypeMapping TypeName="FundModel.tbl_donation">
+              <MappingFragment StoreEntitySet="tbl_donation">
+                <ScalarProperty Name="Ammount" ColumnName="Ammount" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

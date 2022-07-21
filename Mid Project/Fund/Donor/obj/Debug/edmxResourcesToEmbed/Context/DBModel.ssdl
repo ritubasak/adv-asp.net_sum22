@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FundModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tbl_donation">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" />
+    <Property Name="Ammount" Type="int" />
+  </EntityType>
+  <EntityType Name="Tbl_Donor">
+    <Key>
+      <PropertyRef Name="dnId" />
+    </Key>
+    <Property Name="dnId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="dnName" Type="varchar" MaxLength="150" />
+    <Property Name="dnUserName" Type="varchar" MaxLength="150" />
+    <Property Name="dnEmail" Type="varchar" MaxLength="150" />
+    <Property Name="dnGender" Type="varchar" MaxLength="150" />
+    <Property Name="dnPassword" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityContainer Name="FundModelStoreContainer">
+    <EntitySet Name="tbl_donation" EntityType="Self.tbl_donation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_Donor" EntityType="Self.Tbl_Donor" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
