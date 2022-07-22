@@ -1,0 +1,43 @@
+﻿@model fundProject.Models.tbl_donation
+@{
+    ViewBag.Title = "Donation";
+}
+
+<h2>Donation</h2>
+
+<h3>Welcome @Session["username"]</h3>
+
+<br />
+
+<style>
+    .error {
+        color: red;
+    }
+</style>
+
+@using (Html.BeginForm("AddDonation", "Donation", FormMethod.Post))
+{
+    <div class="jumbotron">
+        <div class="container">
+            <div class="form-group">
+                <label>Donor Name</label>
+                @Html.ValidationMessageFor(x => x.UserName, "", new { @class = "error" })
+                @Html.TextBoxFor(x => x.UserName, new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                <label>Donation Ammount</label>
+                @Html.ValidationMessageFor(x => x.Ammount, "", new { @class = "error" })
+                @Html.TextBoxFor(x => x.Ammount, new { @class = "form-control" })
+            </div>
+
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+
+        @Html.ActionLink("Logout", "Logout", "Donor")
+
+        </div>
+            }

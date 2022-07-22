@@ -1,0 +1,89 @@
+﻿
+@{
+ViewBag.Title = "Index";
+}
+
+@*<h2>Index</h2>*@
+<h3>Welcome @Session["username"]</h3>
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html>-->
+@*<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>*@
+<!--<body>-->
+
+    @*<h3>Welcome @Session["username"]</h3>
+        @if (@Session["username"] == null)
+        {
+            Context.Response.Redirect("../Index/Login");
+        }*@
+
+
+            
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+
+
+                    <li>
+                        @*Html.ActionLink("Create New", "Create", "", new { @class = "btn btn-success" })*@
+                        @Html.ActionLink("LogOut", "Logout", "Login")
+                    </li>
+                    <br>
+                    <li>
+                        @Html.ActionLink("Profile Edit", "Edit", "Login")
+                    </li>
+                    <br>
+                    @*<li>
+            @Html.ActionLink("Donar", "Donar", "Donar")
+        </li>
+        <br>*@
+                    <li>
+                        @Html.ActionLink("DonarList", "DonarList", "Donar")
+                    </li>
+                    <br>
+                    @*<li>
+            @Html.ActionLink("Raiser", "Raiser", "Raiser")
+        </li>
+        <br>*@
+                    <li>
+                        @Html.ActionLink("RaiserList", "RaiserList", "Raiser")
+                    </li>
+                    <br>
+                    <li>
+                        @Html.ActionLink("Leave", "leave", "leave")
+                    </li>
+
+                    <br>
+                    <br>
+                    <li>
+                        @Html.ActionLink("Contact", "Index", "EmailSetup")
+                    </li>
+
+                    <br>
+                    <li>
+                        @Html.ActionLink("Donation Amount", "Index", "EDonation")
+                    </li>
+
+                    <br>
+                    <li>
+                        @Html.ActionLink("Chat", "Chat", "ChatHome")
+                    </li>
+
+
+                </ul>
+            </div>
+
+   
+
+   
+@*</body>
+</html>*@

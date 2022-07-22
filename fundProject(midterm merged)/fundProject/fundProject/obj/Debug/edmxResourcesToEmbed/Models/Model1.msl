@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FundModelStoreContainer" CdmEntityContainer="FundEntities">
+    <EntitySetMapping Name="acceptReqs">
+      <EntityTypeMapping TypeName="FundModel.acceptReq">
+        <MappingFragment StoreEntitySet="acceptReq">
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="acceptDate" ColumnName="acceptDate" />
+          <ScalarProperty Name="reqDate" ColumnName="reqDate" />
+          <ScalarProperty Name="uMobile" ColumnName="uMobile" />
+          <ScalarProperty Name="uEmail" ColumnName="uEmail" />
+          <ScalarProperty Name="uAddress" ColumnName="uAddress" />
+          <ScalarProperty Name="uDescription" ColumnName="uDescription" />
+          <ScalarProperty Name="uraiseAmount" ColumnName="uraiseAmount" />
+          <ScalarProperty Name="uName" ColumnName="uName" />
+          <ScalarProperty Name="uId" ColumnName="uId" />
+          <ScalarProperty Name="raiserId" ColumnName="raiserId" />
+          <ScalarProperty Name="eid" ColumnName="eid" />
+          <ScalarProperty Name="aid" ColumnName="aid" />
+          <ScalarProperty Name="acceptedid" ColumnName="acceptedid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="admins">
+      <EntityTypeMapping TypeName="FundModel.admin">
+        <MappingFragment StoreEntitySet="admins">
+          <ScalarProperty Name="aPassword" ColumnName="aPassword" />
+          <ScalarProperty Name="aGender" ColumnName="aGender" />
+          <ScalarProperty Name="aEmail" ColumnName="aEmail" />
+          <ScalarProperty Name="aUserName" ColumnName="aUserName" />
+          <ScalarProperty Name="aName" ColumnName="aName" />
+          <ScalarProperty Name="aId" ColumnName="aId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="employees">
+      <EntityTypeMapping TypeName="FundModel.employee">
+        <MappingFragment StoreEntitySet="employees">
+          <ScalarProperty Name="ePassword" ColumnName="ePassword" />
+          <ScalarProperty Name="eGender" ColumnName="eGender" />
+          <ScalarProperty Name="eEmail" ColumnName="eEmail" />
+          <ScalarProperty Name="eUserName" ColumnName="eUserName" />
+          <ScalarProperty Name="eName" ColumnName="eName" />
+          <ScalarProperty Name="eId" ColumnName="eId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="leaves">
+      <EntityTypeMapping TypeName="FundModel.leave">
+        <MappingFragment StoreEntitySet="leave">
+          <ScalarProperty Name="leaveStatus" ColumnName="leaveStatus" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="eId" ColumnName="eId" />
+          <ScalarProperty Name="leaveId" ColumnName="leaveId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="raisers">
+      <EntityTypeMapping TypeName="FundModel.raiser">
+        <MappingFragment StoreEntitySet="raiser">
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="uMobile" ColumnName="uMobile" />
+          <ScalarProperty Name="uEmail" ColumnName="uEmail" />
+          <ScalarProperty Name="uAddress" ColumnName="uAddress" />
+          <ScalarProperty Name="uDescription" ColumnName="uDescription" />
+          <ScalarProperty Name="uraiseAmount" ColumnName="uraiseAmount" />
+          <ScalarProperty Name="uName" ColumnName="uName" />
+          <ScalarProperty Name="uId" ColumnName="uId" />
+          <ScalarProperty Name="raiserId" ColumnName="raiserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_donation">
+      <EntityTypeMapping TypeName="FundModel.tbl_donation">
+        <MappingFragment StoreEntitySet="tbl_donation">
+          <ScalarProperty Name="Ammount" ColumnName="Ammount" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users1">
+      <EntityTypeMapping TypeName="FundModel.users1">
+        <MappingFragment StoreEntitySet="users1">
+          <ScalarProperty Name="uPassword" ColumnName="uPassword" />
+          <ScalarProperty Name="uGender" ColumnName="uGender" />
+          <ScalarProperty Name="uEmail" ColumnName="uEmail" />
+          <ScalarProperty Name="uUserName" ColumnName="uUserName" />
+          <ScalarProperty Name="uName" ColumnName="uName" />
+          <ScalarProperty Name="uId" ColumnName="uId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users2">
+      <EntityTypeMapping TypeName="FundModel.users2">
+        <MappingFragment StoreEntitySet="users2">
+          <ScalarProperty Name="dnPassword" ColumnName="dnPassword" />
+          <ScalarProperty Name="dnGender" ColumnName="dnGender" />
+          <ScalarProperty Name="dnEmail" ColumnName="dnEmail" />
+          <ScalarProperty Name="dnUserName" ColumnName="dnUserName" />
+          <ScalarProperty Name="dnName" ColumnName="dnName" />
+          <ScalarProperty Name="dnId" ColumnName="dnId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

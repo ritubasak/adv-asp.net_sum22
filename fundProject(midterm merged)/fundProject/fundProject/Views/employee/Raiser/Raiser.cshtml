@@ -1,0 +1,95 @@
+﻿@model fundProject.Models.users1
+@{
+    ViewBag.Title = "Raiser";
+}
+
+<h2>Raiser</h2>
+
+
+<style>
+    .error {
+        color: red;
+    }
+</style>
+
+
+@using (Html.BeginForm("AddRaiser", "Raiser", FormMethod.Post))
+{
+
+    <div class="container">
+        <div class="form-group">
+
+            @Html.HiddenFor(x => x.uId)
+            <label> Name</label>
+            @Html.ValidationMessageFor(x => x.uName, "", new { @class = "text-danger" })
+            @Html.TextBoxFor(x => x.uName, new { @class = "form-control" })
+
+            @*<input class="form-control" id="uName" name="uName" type="text" value="" />*@
+        </div>
+
+        <div class="form-group">
+            <label> UserName</label>
+            @Html.ValidationMessageFor(x => x.uUserName, "", new { @class = "text-danger" })
+            @Html.TextBoxFor(x => x.uUserName, new { @class = "form-control" })
+
+            @*<input class="form-control" id="uUserName" name="uUserName" type="text" value="" />*@
+        </div>
+
+
+
+        <div class="form-group">
+            <label> Email</label>
+            @Html.ValidationMessageFor(x => x.uEmail, "", new { @class = "text-danger" })
+            @Html.TextBoxFor(x => x.uEmail, new { @class = "form-control" })
+
+            @*<input class="form-control" id="uEmail" name="uEmail" type="text" value="" />*@
+        </div>
+
+
+        <div class="form-group">
+            <label> Gender</label>
+            <select name="uGender" id="uGender">
+                <option value="">Select One</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select><br><br>
+
+            @*<label> Gender</label>
+            @Html.ValidationMessageFor(x => x.uGender, "", new { @class = "text-danger" })
+
+            <input class="form-control" id="uGender" name="uGender" type="text" value="" />*@
+        </div>
+
+        <div class="form-group">
+            <label> Password</label>
+            @Html.ValidationMessageFor(x => x.uPassword, "", new { @class = "text-danger" })
+            @Html.TextBoxFor(x => x.uPassword, new { @class = "form-control" })
+
+            @*<input class="form-control" id="uPassword" name="uPassword" type="text" value="" />*@
+        </div>
+
+
+
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary"> Submit</button>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-default">@Html.ActionLink("Back", "Index", "EHome")</button>
+        </div>
+
+    </div>
+
+}
+
+@*<span style="color:green">@ViewBag.Message</span>*@
+
+@if (@ViewBag.Message != null)
+{
+    <script type="text/javascript">
+    window.onload = function () {
+        alert("@ViewBag.Message");
+    };
+    </script>
+}

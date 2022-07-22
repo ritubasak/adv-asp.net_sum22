@@ -1,0 +1,57 @@
+﻿@model fundProject.Models.users2
+@{
+    ViewBag.Title = "Donor";
+}
+
+<h2>Donor</h2>
+
+<style>
+    .error {
+        color:red;
+    }
+</style>
+
+@using (Html.BeginForm("AddDonor", "Donor", FormMethod.Post))
+{
+    <div class="jumbotron">
+        <div class="container">
+            <div class="form-group">
+                @Html.HiddenFor(x => x.dnId)
+                <label>Donor Name</label>
+                @Html.ValidationMessageFor(x => x.dnName, "", new { @class = "error" })
+                @Html.TextBoxFor(x => x.dnName, new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                <label>User Name</label>
+                @Html.ValidationMessageFor(x => x.dnUserName, "", new { @class = "error" })
+                @Html.TextBoxFor(x => x.dnUserName, new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                @Html.ValidationMessageFor(x => x.dnEmail, "", new { @class = "error" })
+                @Html.TextBoxFor(x => x.dnEmail, new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                <label>Gender</label>
+                @Html.ValidationMessageFor(x => x.dnGender, "", new { @class = "error" })
+                @Html.TextBoxFor(x => x.dnGender, new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                <label>Password</label>
+                @Html.ValidationMessageFor(x => x.dnPassword, "", new { @class = "error" })
+                @Html.TextBoxFor(x => x.dnPassword, new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-danger">Reset</button>
+
+            </div>
+        </div>
+    </div>
+}
+

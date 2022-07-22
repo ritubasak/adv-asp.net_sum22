@@ -1,0 +1,65 @@
+﻿
+@model fundProject.Models.employee
+@{
+    ViewBag.Title = "emp";
+}
+
+<h2>emp</h2>
+
+
+
+
+<style>
+    .error {
+        color: red;
+    }
+</style>
+
+@using (Html.BeginForm("emp", "Login", FormMethod.Post))
+{
+
+    <div class="container">
+        <div class="form-group">
+
+            @Html.HiddenFor(x => x.eId)
+            <label> Name</label>
+            @Html.ValidationMessageFor(x => x.eName, "", new { @class = "text-danger" })
+            @Html.TextBoxFor(x => x.eName, new { @class = "form-control" })
+            @*<input class="form-control" id="Name" name="Name" type="text" value="" / >*@
+        </div>
+      
+        <div class="form-group">
+            <label> Father's Name</label>
+            @Html.ValidationMessageFor(x => x.eGender, "", new { @class = "text-danger" })
+            @Html.TextBoxFor(x => x.eGender, new { @class = "form-control" })
+        </div>
+
+
+
+        <div class="form-group">
+            <label> Email</label>
+            @Html.ValidationMessageFor(x => x.eEmail, "", new { @class = "text-danger" })
+            @Html.TextBoxFor(x => x.eEmail, new { @class = "form-control" })
+        </div>
+
+        <div class="form-group">
+            <label> Mobile</label>
+            @Html.ValidationMessageFor(x => x.eUserName, "", new { @class = "text-danger" })
+            @Html.TextBoxFor(x => x.eUserName, new { @class = "form-control" })
+        </div>
+
+        <div class="form-group">
+            <label> Mobile</label>
+            @Html.ValidationMessageFor(x => x.ePassword, "", new { @class = "text-danger" })
+            @Html.TextBoxFor(x => x.ePassword, new { @class = "form-control" })
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary"> Submit</button>
+        </div>
+
+
+    </div>
+
+}
+

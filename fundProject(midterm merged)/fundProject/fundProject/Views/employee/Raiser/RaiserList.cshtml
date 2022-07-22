@@ -1,0 +1,45 @@
+﻿@model List<fundProject.Models.users1>
+@{
+    ViewBag.Title = "RaiserList";
+}
+
+<h2>RaiserList</h2>
+
+
+
+<div class="navbar-collapse collapse">
+    @*<button type="submit" class="btn btn-default"> @Html.ActionLink("Add", "Raiser", "Raiser")</button>*@
+
+    <button type="submit" class="btn btn-default">@Html.ActionLink("Back", "Index", "EHome")</button>
+    <br>
+</div>
+
+
+<table class="table table-hover">
+    <tr>
+        <td>Name</td>
+        <td>UserName</td>
+        <td>Email</td>
+        <td>Gender</td>
+        <td>Password</td>
+        <td>Action</td>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.uName</td>
+            <td>@item.uUserName</td>
+            <td>@item.uEmail</td>
+            <td>@item.uGender</td>
+            <td>@item.uPassword</td>
+            <td>
+                <a href="@Url.Action("Raiser", new {item.uId,item.uName,  item.uUserName, item.uEmail,item.uGender,item.uPassword})" class="btn btn-success">Edit </a>
+                <a href="@Url.Action("Delete", new {item.uId})" class="btn btn-danger">Delete</a>
+            </td>
+
+        </tr>
+    }
+</table>
+
+

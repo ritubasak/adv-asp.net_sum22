@@ -1,0 +1,162 @@
+﻿@model fundProject.Models.admin
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+   
+    <title>Login</title>
+
+
+    <!-- Custom fonts for this template-->
+    <link href="~/Theme/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+          rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="~/Theme/css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-gradient-primary">
+
+
+
+
+    <div class="container">
+
+        <!-- Outer Row -->
+        <div class="row justify-content-center">
+
+            <div class="col-xl-10 col-lg-12 col-md-9">
+
+                <div class="card o-hidden border-0 shadow-lg my-5">
+                    <div class="card-body p-0">
+                       
+
+
+
+
+
+
+                        @using (Html.BeginForm("AdminLogin", "AdminLogin", FormMethod.Post))
+                        {
+                            <table>
+
+                                @*<tr>
+                                    <td colspan="2" class="text-center" style="font-size:25px;">LOGIN</td>
+                                    
+                                            @Html.ActionLink("Employee   ", "Index", "Login")
+                                            @Html.ActionLink("User2  ", "login", "donor")
+                                            @Html.ActionLink("User1", "Login", "Account")
+                                       
+                                </tr>*@
+                              
+
+
+
+
+
+                                <tr>
+                                    <td>@Html.LabelFor(model => model.aEmail)</td>
+                                    <td>
+
+
+                                        @if (Request.Cookies["aEmail"] != null)
+                                        {
+                                            @Html.TextBoxFor(model => model.aEmail, new { @class = "from-controller", @Value = @Request.Cookies["aEmail"].Value.ToString() })
+
+                                        }
+                                        else
+                                        {
+                                            @Html.TextBoxFor(model => model.aEmail, new { @class = "from-controller", @Placeholder = "Enter Your Email" })
+                                        }
+
+
+
+                                        @Html.ValidationMessageFor(model => model.aEmail, "", new { @class = "text-danger" })
+
+
+
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td>@Html.LabelFor(model => model.aPassword)</td>
+                                    <td>
+
+                                        @if (Request.Cookies["aPassword"] != null)
+                                        {
+                                            @Html.EditorFor(model => model.aPassword, new { htmlAttributes = new { @class = "from-controller", @Value = @Request.Cookies["aPassword"].Value.ToString() } })
+
+                                        }
+                                        else
+                                        {
+                                            @Html.EditorFor(model => model.aPassword, new { htmlAttributes = new { @class = "from-controller", @Placeholder = "Enter Your Password" } })
+                                        }
+
+
+
+
+
+
+                                        @Html.ValidationMessageFor(model => model.aPassword, "", new { @class = "text-danger" })
+                                        @ViewBag.ErrorMessage
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Remember Me</td>
+                                    <td>@Html.CheckBox("FlatFile", false)</td>
+
+                                </tr>
+
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input class="btn btn-success" type="submit" name="login" value="Login" />
+                                    </td>
+                                </tr>
+                            </table>
+                        }
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="~/Theme/vendor/jquery/jquery.min.js"></script>
+    <script src="~/Theme/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="~/Theme/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="~/Theme/js/sb-admin-2.min.js"></script>
+
+</body>
+

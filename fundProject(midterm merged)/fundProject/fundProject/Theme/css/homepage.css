@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+html
+{
+
+    scroll-behavior: smooth;
+}
+.navbar{
+    background-color: #131313 ;
+    padding: 1rem  8rem;
+    z-index: 1000;
+}
+.navbar .navbar-brand{
+    color: #00BF85;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-style: italic;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a{
+    color: floralwhite;
+    font-size: 1.1rem;
+    padding: 0rem 0.8rem ;
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover,
+#navbarSupportedContent > ul > li:nth-child(n) > a:active{
+    color: #00BF85;
+    
+}
+  
+#navbarSupportedContent > button {
+    background-color: #00BF85 ;
+    font-weight: 600;
+    padding: 0.4rem 1.4rem;
+    border-radius: 30px;
+}
+
+.mid{
+   width: 100%;
+   height: 100vh;
+   overflow: hidden;
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-content: center;
+   text-align: center;
+}
+.mid video{
+
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    object-fit:  cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.hero{
+    position: relative;
+}
+.mid.hero{
+    height: 50%;
+    width: 58%;
+    font-size: 2.8rem;
+    letter-spacing: 0.2rem;
+    padding: 1.9rem;
+    
+}
+
+.mid .hero a{
+    background-color: #00BF85 ;
+    font-weight: 600;
+    padding: 0.4rem 1.4rem;
+    border-radius: 30px;
+    text-decoration: none;
+}
+.mid .hero a:hover{
+    background-color: #fff;
+}
+.about{
+    background-color: rgba(119, 122, 122, 0.966);
+
+}
+.about .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto ;
+}
+.about .text h6{
+    color: #26e79d;
+    font-weight: 800;
+    font-size: 2.0rem;
+    letter-spacing: 2px;
+}
+.about .text h5{
+    color:#def1f1f8;
+    font-weight: 700;
+    font-size: 2.0rem;
+   
+}
+.about .text P{
+    color:#F7F5F4;
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+   
+}
+.about .text a{
+    background-color: #00BF85 ;
+    font-weight: 600;
+    padding: 0.4rem 1.4rem;
+    border-radius: 30px;
+    text-decoration: none;
+    color:#111;
+   
+}
+.discover .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto ;
+}
+.discover .text h3{
+    color: #00BF75;
+    font-weight: 800;
+    font-size: 1.9rem;
+    letter-spacing: 2px;
+}
+.discover .text h2{
+    color:#111;
+    font-weight: 700;
+    font-size: 2.7rem;
+   
+}
+.discover .text P{
+    color:#111;
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+   
+}
+.discover .text a{
+    background-color: #111 ;
+    font-weight: 500;
+    padding: 0.6rem 1.4rem;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #fff;
+   
+}
+.Service{
+  background: rgb(90, 84, 84);
+
+}
+
+.Service .one{
+ background: #fff;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ padding: 2rem 1.5rem;
+ border-radius: 7px;
+
+}
+
+ 
+
+
+
+.sign .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto ;
+}
+.sign .text h6{
+    color: #00BF75;
+    font-weight: 800;
+    font-size: 2.0rem;
+    letter-spacing: 2px;
+}
+.sign .text h2{
+    color:#111;
+    font-weight: 700;
+    font-size: 2.7rem;
+   
+}
+.sign .text P{
+    
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+   
+}
+.sign .text a{
+    background-color: #111 ;
+    font-weight: 500;
+    padding: 0.4rem 1.4rem;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #fff;
+   
+}
+.howitworks{
+    background: rgba(241, 232, 143, 0.671); ;
+}
+.howitworks .text h2{
+    color:#111;
+    font-weight: 700;
+    font-size: 2.7rem;
+
+   
+}
+body > footer{
+background: #111!important;
+text-align: center;
+}

@@ -1,0 +1,48 @@
+﻿@model fundProject.Models.employee
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/Admin_Layout.cshtml";
+}
+
+<h2>Employee Details</h2>
+
+
+
+<table class="table bg-info table-bordered">
+    
+    <tr class="text-black-50">
+        <td>Name</td>
+        <td>@Model.eName</td>
+    </tr>
+    <tr>
+        <td>Username</td>
+        <td>@Model.eUserName</td>
+    </tr>
+    <tr>
+        <td>Email</td>
+        <td>@Model.eEmail</td>
+    </tr>
+    <tr>
+        <td>Gender</td>
+        <td>@Model.eGender</td>
+
+    </tr>
+    <tr>
+        <td>Password</td>
+        <td>@Model.ePassword</td>
+    </tr>
+    
+
+</table>
+
+
+
+
+
+
+<p>
+    @*ei line thik kora lagbe*@ 
+    @*@Html.ActionLink("Edit", "Edit", new { id = Model.eId }) |*@
+    @Html.ActionLink("Back to List", "Index","",new {@class="btn btn-danger"})
+</p>

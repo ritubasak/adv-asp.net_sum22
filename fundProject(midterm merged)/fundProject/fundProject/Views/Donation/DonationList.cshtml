@@ -1,0 +1,23 @@
+﻿@model List<fundProject.Models.tbl_donation>
+
+@{
+    ViewBag.Title = "DonationList";
+}
+
+<h2>DonationList</h2>
+<div class="jumbotron">
+    <table class="table table-hover">
+        <tr>
+            <th>Donor Name</th>
+            <th>Ammount (TK)</th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.UserName</td>
+                <td>@item.Ammount</td>
+            </tr>
+        }
+    </table>
+    </div>

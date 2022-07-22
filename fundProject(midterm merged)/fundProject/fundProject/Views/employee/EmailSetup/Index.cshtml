@@ -1,0 +1,89 @@
+﻿
+@model fundProject.Models.gmail
+
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("Index", "EmailSetup", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <center>
+                <h2>Gmail</h2>
+                <hr />
+                <table>
+                    <tr>
+                        <td style="width:80px;">
+                            To:
+                        </td>
+                        <td>
+                            <input class="form-control" id="To" name="To" type="text" value="" />
+                            @Html.ValidationMessageFor(x => x.To, "", new { @class = "text-danger" })
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="width:80px;">
+                            Subject:
+                        </td>
+                        <td>
+                            <input class="form-control" id="Subject" name="Subject" type="text" value="" />
+                            @Html.ValidationMessageFor(x => x.Subject, "", new { @class = "text-danger" })
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="width:80px;">
+                            Body:
+                        </td>
+                        @*<td>@Html.TextAreaFor(model => model.Body, new { rows = "15", cols = "25" })</td>*@
+                    <td>
+                        <input class="form-control" id="Body" name="Body" type="text" value="" />
+                        @Html.ValidationMessageFor(x => x.Body, "", new { @class = "text-danger" })
+                    </td>
+                    </tr>
+
+                    <br />
+                    <tr>
+                        <td>
+                            <input type="submit" class=" btn btn-primary" value="Send" />
+                        </td>
+
+                    </tr>
+
+                </table>
+                <br />
+                @*<span style="color:green">@ViewBag.Message</span>*@
+            </center>
+            <div class="form-group">
+                <button type="submit" class="btn btn-default">@Html.ActionLink("Back", "Index", "EHome")</button>
+            </div>
+
+        }
+    </div>
+
+</body>
+</html>
+@if (@ViewBag.Message != null)
+{
+    <script type="text/javascript">
+    window.onload = function () {
+        alert("@ViewBag.Message");
+    };
+    </script>
+
+}
+

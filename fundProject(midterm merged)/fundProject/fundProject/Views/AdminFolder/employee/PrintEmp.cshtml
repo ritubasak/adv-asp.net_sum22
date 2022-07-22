@@ -1,0 +1,68 @@
+﻿@model IEnumerable<fundProject.Models.employee>
+@{
+    ViewBag.Title = "List of Employee";
+    Layout = null;
+}
+
+<h2>List of Employee</h2>
+<table class="table">
+    <tr>
+        <th>
+
+            eId
+        </th>
+        <th>
+
+            Name
+        </th>
+        <th>
+
+            Username
+        </th>
+        <th>
+
+            Email
+        </th>
+        <th>
+
+            Gender
+        </th>
+        <th>
+
+            Password
+        </th>
+        
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+              
+                @item.eId
+            </td>
+            <td>
+            
+                @item.eName
+            </td>
+            <td>
+               
+                @item.eUserName
+            </td>
+            <td>
+               
+                @item.eEmail
+            </td>
+            <td>
+               
+                @item.eGender
+            </td>
+            <td>
+               
+                @item.ePassword
+            </td>
+            
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,51 @@
+﻿@model List<fundProject.Models.users2>
+@{
+    ViewBag.Title = "DonarList";
+}
+
+<h2>DonarList</h2>
+
+
+
+
+
+<div class="navbar-collapse collapse">
+    @*<button type="submit" class="btn btn-default">
+        @Html.ActionLink("Add", "Donar", "Donar")
+    </button>*@
+    <button type="submit" class="btn btn-default">@Html.ActionLink("Back", "Index", "EHome")</button>
+
+</div>
+
+<br>
+
+<table class="table table-hover">
+    <tr>
+        <td>Name</td>
+        <td>UserName</td>
+        <td>Email</td>
+        <td>Gender</td>
+        <td>Password</td>
+        <td>Action</td>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.dnName</td>
+            <td>@item.dnUserName</td>
+            <td>@item.dnEmail</td>
+            <td>@item.dnGender</td>
+            <td>@item.dnPassword</td>
+            <td>
+                <a href="@Url.Action( "Donar", new {item.dnId,item.dnName,  item.dnUserName, item.dnEmail,item.dnGender,item.dnPassword})" class="btn btn-success">Edit </a>
+                <a href="@Url.Action("Delete", new {item.dnId})" class="btn btn-danger">Delete</a>
+            </td>
+
+        </tr>
+    }
+
+  
+</table>
+
+

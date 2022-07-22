@@ -1,0 +1,132 @@
+﻿@model fundProject.Models.employee
+@{
+    ViewBag.Title = "UserProfile";
+}
+
+<h2>UserProfile</h2>
+
+<div>
+    <h4>
+        User<h4>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(x => x.eName)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(x => x.eName)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(x => x.eUserName)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.eUserName)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(x => x.eEmail)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.eEmail)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(x => x.eGender)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.eGender)
+                </dd>
+            </dl>
+</div>
+
+
+
+
+@*@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Student</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(x => x.eName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.eName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(x => x.eUserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.eUserName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(x => x.eEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.eEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(x => x.eGender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.eGender)
+        </dd>
+</dl>
+      
+</div>*@
+
+@*</dl>
+        <table class="table">
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    UserName
+                </th>
+                <th>
+                    Email
+                </th>
+                <th>
+                    Gender
+                </th>
+            </tr>
+
+
+                @foreach (var item in Model.item)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.e)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Grade)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Course.Credits)
+                        </td>
+                    </tr>
+                }
+        </table>
+    </div>*@
+@*<p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.StudentID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>*@

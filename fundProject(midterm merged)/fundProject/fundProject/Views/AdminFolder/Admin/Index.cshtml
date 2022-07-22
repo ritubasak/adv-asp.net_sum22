@@ -1,0 +1,74 @@
+﻿@model IEnumerable<fundProject.Models.admin>
+
+@{
+    ViewBag.Title = "Admin_List";
+    Layout = "~/Views/Shared/Admin_Layout.cshtml";
+}
+
+<h2>Admin List</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create","",new {@class = "btn btn-success"})
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @*@Html.DisplayNameFor(model => model.aId)*@
+            ID
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.aName)*@
+            Name
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.aUserName)*@
+            Username
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.aEmail)*@
+            Email
+        </th>
+        <th>
+            @*@Html.DisplayNameFor(model => model.aGender)*@
+            Gender
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.aPassword)
+        </th>*@
+        <th>Action</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @*@Html.DisplayFor(modelItem => item.aId)*@
+            @item.aId
+        </td>
+        <td>
+            @*@Html.DisplayFor(modelItem => item.aName)*@
+            @item.aName
+        </td>
+        <td>
+            @*@Html.DisplayFor(modelItem => item.aUserName)*@
+            @item.aUserName
+        </td>
+        <td>
+            @*@Html.DisplayFor(modelItem => item.aEmail)*@
+            @item.aEmail
+        </td>
+        <td>
+            @*@Html.DisplayFor(modelItem => item.aGender)*@
+            @item.aGender
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.aPassword)
+        </td>*@
+        <td>
+            @*@Html.ActionLink("Edit", "Edit", new {  id=item.aId }) |*@
+            @Html.ActionLink("Details", "Details", new { id = item.aId }, new {@class = "btn btn-success"}) @*|
+        @Html.ActionLink("Delete", "Delete", new { id = item.aId })*@
+        </td>
+    </tr>
+}
+
+</table>

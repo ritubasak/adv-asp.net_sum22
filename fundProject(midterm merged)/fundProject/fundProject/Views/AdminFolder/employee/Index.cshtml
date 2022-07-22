@@ -1,0 +1,81 @@
+﻿@model IEnumerable<fundProject.Models.employee>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Admin_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create", "", new { @class = "btn btn-success" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+           
+            eId
+        </th>
+        <th>
+           
+            Name
+        </th>
+        <th>
+          
+            Username
+        </th>
+        <th>
+          
+            Email
+        </th>
+        <th>
+       
+            Gender
+        </th>
+        <th>
+           
+            Password
+        </th>
+        <th>Action</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @*@Html.DisplayFor(modelItem => item.eId)*@
+            @item.eId
+        </td>
+        <td>
+            @*@Html.DisplayFor(modelItem => item.eName)*@
+            @item.eName
+        </td>
+        <td>
+            @*@Html.DisplayFor(modelItem => item.uUserName)*@
+            @item.eUserName
+        </td>
+        <td>
+            @*@Html.DisplayFor(modelItem => item.uEmail)*@
+            @item.eEmail
+        </td>
+        <td>
+            @*@Html.DisplayFor(modelItem => item.uGender)*@
+            @item.eGender
+        </td>
+        <td>
+            @*@Html.DisplayFor(modelItem => item.uPassword)*@
+            @item.ePassword
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.eId }, new { @class = "btn btn-success" }) |
+            @Html.ActionLink("Details", "Details", new { id=item.eId  }, new { @class = "btn btn-success" }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.eId }, new { @class = "btn btn-success" })
+        </td>
+    </tr>
+}
+
+</table>
+
+
+<div class="row">
+    @Html.ActionLink("Print Employee record", "PrintEmps", "employee",new {@class="btn btn-primary",@target="_blank"})
+</div>

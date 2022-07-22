@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FundModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="acceptReq">
+    <Key>
+      <PropertyRef Name="acceptedid" />
+    </Key>
+    <Property Name="acceptedid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="aid" Type="int" />
+    <Property Name="eid" Type="int" />
+    <Property Name="raiserId" Type="int" />
+    <Property Name="uId" Type="int" />
+    <Property Name="uName" Type="varchar" MaxLength="100" />
+    <Property Name="uraiseAmount" Type="varchar" MaxLength="50" />
+    <Property Name="uDescription" Type="varchar" MaxLength="5000" />
+    <Property Name="uAddress" Type="varchar" MaxLength="500" />
+    <Property Name="uEmail" Type="varchar" MaxLength="100" />
+    <Property Name="uMobile" Type="varchar" MaxLength="50" />
+    <Property Name="reqDate" Type="varchar" MaxLength="50" />
+    <Property Name="acceptDate" Type="varchar" MaxLength="50" />
+    <Property Name="image" Type="image" />
+  </EntityType>
+  <EntityType Name="admins">
+    <Key>
+      <PropertyRef Name="aId" />
+    </Key>
+    <Property Name="aId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="aName" Type="varchar" MaxLength="100" />
+    <Property Name="aUserName" Type="varchar" MaxLength="50" />
+    <Property Name="aEmail" Type="varchar" MaxLength="100" />
+    <Property Name="aGender" Type="varchar" MaxLength="20" />
+    <Property Name="aPassword" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="employees">
+    <Key>
+      <PropertyRef Name="eId" />
+    </Key>
+    <Property Name="eId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="eName" Type="varchar" MaxLength="100" />
+    <Property Name="eUserName" Type="varchar" MaxLength="50" />
+    <Property Name="eEmail" Type="varchar" MaxLength="100" />
+    <Property Name="eGender" Type="varchar" MaxLength="20" />
+    <Property Name="ePassword" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="leave">
+    <Key>
+      <PropertyRef Name="leaveId" />
+    </Key>
+    <Property Name="leaveId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="eId" Type="int" Nullable="false" />
+    <Property Name="description" Type="varchar" MaxLength="5000" />
+    <Property Name="leaveStatus" Type="int" />
+  </EntityType>
+  <EntityType Name="raiser">
+    <Key>
+      <PropertyRef Name="raiserId" />
+    </Key>
+    <Property Name="raiserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="uId" Type="int" />
+    <Property Name="uName" Type="varchar" MaxLength="100" />
+    <Property Name="uraiseAmount" Type="varchar" MaxLength="50" />
+    <Property Name="uDescription" Type="varchar" MaxLength="5000" />
+    <Property Name="uAddress" Type="varchar" MaxLength="500" />
+    <Property Name="uEmail" Type="varchar" MaxLength="100" />
+    <Property Name="uMobile" Type="varchar" MaxLength="50" />
+    <Property Name="Date" Type="varchar" MaxLength="50" />
+    <Property Name="image" Type="image" />
+    <Property Name="status" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_donation">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" />
+    <Property Name="Ammount" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="users1">
+    <Key>
+      <PropertyRef Name="uId" />
+    </Key>
+    <Property Name="uId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="uName" Type="varchar" MaxLength="100" />
+    <Property Name="uUserName" Type="varchar" MaxLength="50" />
+    <Property Name="uEmail" Type="varchar" MaxLength="100" />
+    <Property Name="uGender" Type="varchar" MaxLength="20" />
+    <Property Name="uPassword" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="users2">
+    <Key>
+      <PropertyRef Name="dnId" />
+    </Key>
+    <Property Name="dnId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="dnName" Type="varchar" MaxLength="100" />
+    <Property Name="dnUserName" Type="varchar" MaxLength="50" />
+    <Property Name="dnEmail" Type="varchar" MaxLength="100" />
+    <Property Name="dnGender" Type="varchar" MaxLength="20" />
+    <Property Name="dnPassword" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <Association Name="FK_acceptReq_admins">
+    <End Role="admins" Type="Self.admins" Multiplicity="0..1" />
+    <End Role="acceptReq" Type="Self.acceptReq" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="admins">
+        <PropertyRef Name="aId" />
+      </Principal>
+      <Dependent Role="acceptReq">
+        <PropertyRef Name="aid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_acceptReq_employees">
+    <End Role="employees" Type="Self.employees" Multiplicity="0..1" />
+    <End Role="acceptReq" Type="Self.acceptReq" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="employees">
+        <PropertyRef Name="eId" />
+      </Principal>
+      <Dependent Role="acceptReq">
+        <PropertyRef Name="eid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_leave_employees">
+    <End Role="employees" Type="Self.employees" Multiplicity="1" />
+    <End Role="leave" Type="Self.leave" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="employees">
+        <PropertyRef Name="eId" />
+      </Principal>
+      <Dependent Role="leave">
+        <PropertyRef Name="leaveId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_raiser_users1">
+    <End Role="users1" Type="Self.users1" Multiplicity="0..1" />
+    <End Role="raiser" Type="Self.raiser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users1">
+        <PropertyRef Name="uId" />
+      </Principal>
+      <Dependent Role="raiser">
+        <PropertyRef Name="uId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="FundModelStoreContainer">
+    <EntitySet Name="acceptReq" EntityType="Self.acceptReq" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="admins" EntityType="Self.admins" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="employees" EntityType="Self.employees" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="leave" EntityType="Self.leave" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="raiser" EntityType="Self.raiser" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_donation" EntityType="Self.tbl_donation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="users1" EntityType="Self.users1" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="users2" EntityType="Self.users2" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_acceptReq_admins" Association="Self.FK_acceptReq_admins">
+      <End Role="admins" EntitySet="admins" />
+      <End Role="acceptReq" EntitySet="acceptReq" />
+    </AssociationSet>
+    <AssociationSet Name="FK_acceptReq_employees" Association="Self.FK_acceptReq_employees">
+      <End Role="employees" EntitySet="employees" />
+      <End Role="acceptReq" EntitySet="acceptReq" />
+    </AssociationSet>
+    <AssociationSet Name="FK_leave_employees" Association="Self.FK_leave_employees">
+      <End Role="employees" EntitySet="employees" />
+      <End Role="leave" EntitySet="leave" />
+    </AssociationSet>
+    <AssociationSet Name="FK_raiser_users1" Association="Self.FK_raiser_users1">
+      <End Role="users1" EntitySet="users1" />
+      <End Role="raiser" EntitySet="raiser" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

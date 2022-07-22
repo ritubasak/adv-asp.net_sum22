@@ -1,0 +1,40 @@
+﻿@model fundProject.Models.admin
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/Admin_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<table class="table bg-info table-bordered">
+
+    <tr class="text-black-50">
+        <td>Name</td>
+        <td>@Model.aName</td>
+    </tr>
+    <tr>
+        <td>Username</td>
+        <td>@Model.aUserName</td>
+    </tr>
+    <tr>
+        <td>Email</td>
+        <td>@Model.aEmail</td>
+    </tr>
+    <tr>
+        <td>Gender</td>
+        <td>@Model.aGender</td>
+
+    </tr>
+    <tr>
+        <td>Password</td>
+        <td>@Model.aPassword</td>
+    </tr>
+
+
+</table>
+
+<p>
+    @*@Html.ActionLink("Edit", "Edit", new { id = Model.aId }) |*@
+    @Html.ActionLink("Back to List", "Index","",new {@class="btn btn-danger"})
+</p>

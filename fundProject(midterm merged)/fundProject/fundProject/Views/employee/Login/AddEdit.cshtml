@@ -1,0 +1,18 @@
+﻿@model fundProject.Models.employee
+
+@using (Html.BeginForm("AddEdit", "Login"))
+{
+    @*@Html.EditorFor(model => model.FirstName)
+        @Html.EditorFor(model => model.LastName)
+        @Html.EditorFor(model => model.Email)*@
+
+    @Html.EditorFor(model => model.eId)
+    @Html.EditorFor(model => model.eName)
+    @Html.EditorFor(model => model.eUserName)
+    @Html.EditorFor(model => model.eEmail)
+    @Html.EditorFor(model => model.eGender)
+    @Html.EditorFor(model => model.ePassword)
+
+
+    <input type="submit" value="Save" />
+}

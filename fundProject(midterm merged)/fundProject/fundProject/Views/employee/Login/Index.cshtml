@@ -1,0 +1,56 @@
+﻿
+@model fundProject.Models.employee
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<br/><br /><br /><br />
+
+<div class="row">
+
+    <div class="col-md-7 col-md-offset-4">
+
+        <div style=" padding:10px;">
+
+            @using (Html.BeginForm("Index", "Login", FormMethod.Post))
+            {
+                <table height="200">
+                    <tr>
+                        <th colspan="2" class="text-center" style="font-size:25px;">LOGIN</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label> User Name :</label>
+                        </td>
+                        <td>
+                            <input class="form-control" id="eUserName" name="eUserName" type="text" value="" />
+                            @Html.ValidationMessageFor(model => model.eUserName, "", new { @class = "text-danger" })
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label> Password :</label></td>
+                        <td>
+                            @*<input class="form-control" class="text-box single-line" id="ePassword" name="ePassword" type="text" value="" />*@
+
+                            @Html.EditorFor(model => model.ePassword, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.ePassword, "", new { @class = "text-danger" })
+                            <p class="text-danger">@ViewBag.ErrorMessage</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="Login" name="login" class="btn btn-info" />
+                            <a href="/Login/Reset" class="btn btn-danger">Reset</a>
+                        </td>
+                    </tr>
+                </table>
+            }
+
+        </div>
+
+    </div>
+
+</div>

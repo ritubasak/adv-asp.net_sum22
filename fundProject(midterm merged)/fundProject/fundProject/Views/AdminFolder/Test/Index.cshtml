@@ -1,0 +1,64 @@
+﻿@model IEnumerable<fundProject.Models.admin>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/Admin_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.aId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.aName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.aUserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.aEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.aGender)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.aPassword)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.aId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.aName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.aUserName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.aEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.aGender)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.aPassword)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

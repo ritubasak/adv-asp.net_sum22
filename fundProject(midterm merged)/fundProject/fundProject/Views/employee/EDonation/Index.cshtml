@@ -1,0 +1,58 @@
+﻿@model List<fundProject.Models.tbl_donation>
+@{
+    ViewBag.Title = "DonationList";
+}
+
+<h2>Donation List</h2>
+
+<div class="navbar-collapse collapse">
+
+
+    <button type="submit" class="btn btn-default">@Html.ActionLink("Back", "Index", "EHome")</button>
+    <br>
+</div>
+<br/>
+
+
+<table class="table table-hover">
+    <tr>
+
+        <td>UserName</td>
+        <td>Ammount</td>
+      
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.UserName</td>
+            <td>@item.Ammount</td>
+
+
+
+        </tr>
+    }
+</table>
+<br/>
+<br />
+
+<table class="table table-hover">
+    <tr>
+
+        <td ><h4>Total Amount</h4></td>
+        <td style="width: 550px"> @Model.Sum(i => i.Ammount)</td>
+
+
+    </tr>
+
+    
+    
+</table>
+
+@*<h2>Total Amount</h2>
+<div>
+    @Model.Sum(i => i.Ammount)
+</div>*@
+
+

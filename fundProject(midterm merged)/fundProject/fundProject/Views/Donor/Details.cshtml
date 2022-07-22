@@ -1,0 +1,60 @@
+﻿@model fundProject.Models.users2
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<div class="jumbotron">
+    <h4><b>Details Info</b></h4>
+    <hr />
+    <dl class="dropdown-menu-left">
+        <dt>
+            @Html.DisplayNameFor(x => x.dnId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(x => x.dnId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(x => x.dnName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(x => x.dnName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(x => x.dnUserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(x => x.dnUserName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(x => x.dnEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(x => x.dnEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(x => x.dnGender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(x => x.dnGender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(x => x.dnPassword)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(x => x.dnPassword)
+        </dd>
+
+    </dl>
+</div>
