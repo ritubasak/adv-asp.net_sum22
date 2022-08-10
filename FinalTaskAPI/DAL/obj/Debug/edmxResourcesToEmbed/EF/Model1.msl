@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FundModelStoreContainer" CdmEntityContainer="FundEntities">
+    <EntitySetMapping Name="emps">
+      <EntityTypeMapping TypeName="FundModel.emp">
+        <MappingFragment StoreEntitySet="emp">
+          <ScalarProperty Name="eId" ColumnName="eId" />
+          <ScalarProperty Name="eName" ColumnName="eName" />
+          <ScalarProperty Name="eUserName" ColumnName="eUserName" />
+          <ScalarProperty Name="eEmail" ColumnName="eEmail" />
+          <ScalarProperty Name="eGender" ColumnName="eGender" />
+          <ScalarProperty Name="ePassword" ColumnName="ePassword" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_donation">
+      <EntityTypeMapping TypeName="FundModel.tbl_donation">
+        <MappingFragment StoreEntitySet="tbl_donation">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Ammount" ColumnName="Ammount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tbl_Donor">
+      <EntityTypeMapping TypeName="FundModel.Tbl_Donor">
+        <MappingFragment StoreEntitySet="Tbl_Donor">
+          <ScalarProperty Name="dnId" ColumnName="dnId" />
+          <ScalarProperty Name="dnName" ColumnName="dnName" />
+          <ScalarProperty Name="dnUserName" ColumnName="dnUserName" />
+          <ScalarProperty Name="dnEmail" ColumnName="dnEmail" />
+          <ScalarProperty Name="dnGender" ColumnName="dnGender" />
+          <ScalarProperty Name="dnPassword" ColumnName="dnPassword" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users1">
+      <EntityTypeMapping TypeName="FundModel.users1">
+        <MappingFragment StoreEntitySet="users1">
+          <ScalarProperty Name="uId" ColumnName="uId" />
+          <ScalarProperty Name="uName" ColumnName="uName" />
+          <ScalarProperty Name="uUserName" ColumnName="uUserName" />
+          <ScalarProperty Name="uEmail" ColumnName="uEmail" />
+          <ScalarProperty Name="uGender" ColumnName="uGender" />
+          <ScalarProperty Name="uPassword" ColumnName="uPassword" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

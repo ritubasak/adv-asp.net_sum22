@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FundModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="emp">
+    <Key>
+      <PropertyRef Name="eId" />
+    </Key>
+    <Property Name="eId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="eName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="eUserName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="eEmail" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="eGender" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ePassword" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_donation">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" />
+    <Property Name="Ammount" Type="int" />
+  </EntityType>
+  <EntityType Name="Tbl_Donor">
+    <Key>
+      <PropertyRef Name="dnId" />
+    </Key>
+    <Property Name="dnId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="dnName" Type="varchar" MaxLength="150" />
+    <Property Name="dnUserName" Type="varchar" MaxLength="150" />
+    <Property Name="dnEmail" Type="varchar" MaxLength="150" />
+    <Property Name="dnGender" Type="varchar" MaxLength="150" />
+    <Property Name="dnPassword" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="users1">
+    <Key>
+      <PropertyRef Name="uId" />
+    </Key>
+    <Property Name="uId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="uName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="uUserName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="uEmail" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="uGender" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="uPassword" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="FundModelStoreContainer">
+    <EntitySet Name="emp" EntityType="Self.emp" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_donation" EntityType="Self.tbl_donation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tbl_Donor" EntityType="Self.Tbl_Donor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="users1" EntityType="Self.users1" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
