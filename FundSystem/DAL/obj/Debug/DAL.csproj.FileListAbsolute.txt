@@ -1,0 +1,35 @@
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\DAL\bin\Debug\DAL.exe.config
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\DAL\bin\Debug\DAL.exe
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\DAL\bin\Debug\DAL.pdb
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\DAL\bin\Debug\EntityFramework.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\DAL\bin\Debug\EntityFramework.xml
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\DAL\obj\Debug\DAL.csproj.SuggestedBindingRedirects.cache
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\DAL\obj\Debug\DAL.exe
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\DAL\obj\Debug\DAL.pdb
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\DAL\bin\Debug\AutoMapper.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\DAL\bin\Debug\AutoMapper.xml
+E:\CSE\CV\FinalTaskAPI\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\CSE\CV\FinalTaskAPI\DAL\obj\Debug\DAL.csproj.SuggestedBindingRedirects.cache
+E:\CSE\CV\FinalTaskAPI\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\CSE\CV\FinalTaskAPI\DAL\obj\Debug\DAL.exe
+E:\CSE\CV\FinalTaskAPI\DAL\obj\Debug\DAL.pdb
+E:\CSE\CV\FinalTaskAPI\DAL\bin\Debug\DAL.exe.config
+E:\CSE\CV\FinalTaskAPI\DAL\bin\Debug\DAL.exe
+E:\CSE\CV\FinalTaskAPI\DAL\bin\Debug\DAL.pdb
+E:\CSE\CV\FinalTaskAPI\DAL\bin\Debug\AutoMapper.dll
+E:\CSE\CV\FinalTaskAPI\DAL\bin\Debug\EntityFramework.dll
+E:\CSE\CV\FinalTaskAPI\DAL\bin\Debug\AutoMapper.xml
+E:\CSE\CV\FinalTaskAPI\DAL\bin\Debug\EntityFramework.xml
+E:\CSE\CV\FinalTaskAPI\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\CSE\CV\FinalTaskAPI\DAL\bin\Debug\Newtonsoft.Json.dll
+E:\CSE\CV\FinalTaskAPI\DAL\bin\Debug\System.Net.Http.Formatting.dll
+E:\CSE\CV\FinalTaskAPI\DAL\bin\Debug\System.Web.Cors.dll
+E:\CSE\CV\FinalTaskAPI\DAL\bin\Debug\System.Web.Http.Cors.dll
+E:\CSE\CV\FinalTaskAPI\DAL\bin\Debug\System.Web.Http.dll
+E:\CSE\CV\FinalTaskAPI\DAL\bin\Debug\Newtonsoft.Json.xml
+E:\CSE\CV\FinalTaskAPI\DAL\bin\Debug\System.Net.Http.Formatting.xml
+E:\CSE\CV\FinalTaskAPI\DAL\bin\Debug\System.Web.Http.xml
+E:\CSE\CV\FinalTaskAPI\DAL\bin\Debug\System.Web.Http.Cors.xml

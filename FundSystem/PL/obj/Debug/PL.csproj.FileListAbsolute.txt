@@ -1,0 +1,157 @@
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\PL.dll.config
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\PL.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\PL.pdb
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\csc.exe
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\csc.exe.config
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\csc.rsp
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\csi.exe
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\csi.exe.config
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\csi.rsp
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\Microsoft.Managed.Core.targets
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\System.AppContext.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\System.Collections.Immutable.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\System.Console.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\System.Globalization.Calendars.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\System.IO.Compression.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\System.IO.FileSystem.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\System.Net.Http.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\System.Net.Sockets.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\System.Reflection.Metadata.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\System.ValueTuple.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\System.Xml.XmlDocument.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\System.Xml.XPath.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\vbc.exe
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\vbc.exe.config
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\vbc.rsp
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\VBCSCompiler.exe
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\roslyn\VBCSCompiler.exe.config
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\BLL.exe
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\Newtonsoft.Json.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\System.Net.Http.Formatting.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\System.Web.Http.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\System.Web.Http.WebHost.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\BLL.pdb
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\BLL.exe.config
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\Newtonsoft.Json.xml
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\System.Net.Http.Formatting.xml
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\System.Web.Http.xml
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\System.Web.Http.WebHost.xml
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\obj\Debug\PL.csproj.AssemblyReference.cache
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\obj\Debug\PL.csproj.CoreCompileInputs.cache
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\obj\Debug\PL.csproj.CopyComplete
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\obj\Debug\PL.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\obj\Debug\PL.pdb
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\AutoMapper.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\DAL.exe
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\EntityFramework.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\AutoMapper.xml
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\DAL.pdb
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\DAL.exe.config
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\PL\bin\EntityFramework.xml
+E:\CSE\CV\FinalTaskAPI\PL\obj\Debug\PL.csproj.AssemblyReference.cache
+E:\CSE\CV\FinalTaskAPI\PL\obj\Debug\PL.csproj.CoreCompileInputs.cache
+E:\CSE\CV\FinalTaskAPI\PL\obj\Debug\PL.dll
+E:\CSE\CV\FinalTaskAPI\PL\obj\Debug\PL.pdb
+E:\CSE\CV\FinalTaskAPI\PL\bin\PL.dll.config
+E:\CSE\CV\FinalTaskAPI\PL\bin\PL.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\PL.pdb
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\csc.exe
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\csc.exe.config
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\csc.rsp
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\csi.exe
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\csi.exe.config
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\csi.rsp
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\Microsoft.Managed.Core.targets
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\System.AppContext.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\System.Collections.Immutable.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\System.Console.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\System.Globalization.Calendars.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\System.IO.Compression.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\System.IO.FileSystem.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\System.Net.Http.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\System.Net.Sockets.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\System.Reflection.Metadata.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\System.ValueTuple.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\System.Xml.XmlDocument.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\System.Xml.XPath.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\vbc.exe
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\vbc.exe.config
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\vbc.rsp
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\VBCSCompiler.exe
+E:\CSE\CV\FinalTaskAPI\PL\bin\roslyn\VBCSCompiler.exe.config
+E:\CSE\CV\FinalTaskAPI\PL\bin\AutoMapper.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\BLL.exe
+E:\CSE\CV\FinalTaskAPI\PL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\Newtonsoft.Json.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\System.Net.Http.Formatting.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\System.Web.Http.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\System.Web.Http.WebHost.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\DAL.exe
+E:\CSE\CV\FinalTaskAPI\PL\bin\EntityFramework.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\BLL.pdb
+E:\CSE\CV\FinalTaskAPI\PL\bin\BLL.exe.config
+E:\CSE\CV\FinalTaskAPI\PL\bin\AutoMapper.xml
+E:\CSE\CV\FinalTaskAPI\PL\bin\Newtonsoft.Json.xml
+E:\CSE\CV\FinalTaskAPI\PL\bin\System.Net.Http.Formatting.xml
+E:\CSE\CV\FinalTaskAPI\PL\bin\System.Web.Http.xml
+E:\CSE\CV\FinalTaskAPI\PL\bin\System.Web.Http.WebHost.xml
+E:\CSE\CV\FinalTaskAPI\PL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\CSE\CV\FinalTaskAPI\PL\bin\DAL.pdb
+E:\CSE\CV\FinalTaskAPI\PL\bin\DAL.exe.config
+E:\CSE\CV\FinalTaskAPI\PL\bin\EntityFramework.xml
+E:\CSE\CV\FinalTaskAPI\PL\obj\Debug\PL.csproj.CopyComplete
+E:\CSE\CV\FinalTaskAPI\PL\bin\System.Web.Cors.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\System.Web.Http.Cors.dll
+E:\CSE\CV\FinalTaskAPI\PL\bin\System.Web.Http.Cors.xml

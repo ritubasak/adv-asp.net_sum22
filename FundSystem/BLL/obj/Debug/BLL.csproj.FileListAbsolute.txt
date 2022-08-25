@@ -1,0 +1,41 @@
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\BLL\bin\Debug\BLL.exe.config
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\BLL\bin\Debug\BLL.exe
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\BLL\bin\Debug\BLL.pdb
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\BLL\bin\Debug\DAL.exe
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\BLL\bin\Debug\EntityFramework.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\BLL\bin\Debug\DAL.pdb
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\BLL\bin\Debug\DAL.exe.config
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\BLL\bin\Debug\EntityFramework.xml
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\BLL\obj\Debug\BLL.csproj.SuggestedBindingRedirects.cache
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\BLL\obj\Debug\BLL.exe
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\BLL\obj\Debug\BLL.pdb
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\BLL\bin\Debug\AutoMapper.dll
+E:\CSE\11TH SEMESTER\ASP.NET\Final\FinalTaskAPI\BLL\bin\Debug\AutoMapper.xml
+E:\CSE\CV\FinalTaskAPI\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+E:\CSE\CV\FinalTaskAPI\BLL\obj\Debug\BLL.csproj.SuggestedBindingRedirects.cache
+E:\CSE\CV\FinalTaskAPI\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+E:\CSE\CV\FinalTaskAPI\BLL\obj\Debug\BLL.exe
+E:\CSE\CV\FinalTaskAPI\BLL\obj\Debug\BLL.pdb
+E:\CSE\CV\FinalTaskAPI\BLL\bin\Debug\BLL.exe.config
+E:\CSE\CV\FinalTaskAPI\BLL\bin\Debug\BLL.exe
+E:\CSE\CV\FinalTaskAPI\BLL\bin\Debug\BLL.pdb
+E:\CSE\CV\FinalTaskAPI\BLL\bin\Debug\AutoMapper.dll
+E:\CSE\CV\FinalTaskAPI\BLL\bin\Debug\DAL.exe
+E:\CSE\CV\FinalTaskAPI\BLL\bin\Debug\EntityFramework.dll
+E:\CSE\CV\FinalTaskAPI\BLL\bin\Debug\DAL.pdb
+E:\CSE\CV\FinalTaskAPI\BLL\bin\Debug\DAL.exe.config
+E:\CSE\CV\FinalTaskAPI\BLL\bin\Debug\AutoMapper.xml
+E:\CSE\CV\FinalTaskAPI\BLL\bin\Debug\EntityFramework.xml
+E:\CSE\CV\FinalTaskAPI\BLL\obj\Debug\BLL.csproj.CopyComplete
+E:\CSE\CV\FinalTaskAPI\BLL\bin\Debug\Newtonsoft.Json.dll
+E:\CSE\CV\FinalTaskAPI\BLL\bin\Debug\System.Net.Http.Formatting.dll
+E:\CSE\CV\FinalTaskAPI\BLL\bin\Debug\System.Web.Cors.dll
+E:\CSE\CV\FinalTaskAPI\BLL\bin\Debug\System.Web.Http.Cors.dll
+E:\CSE\CV\FinalTaskAPI\BLL\bin\Debug\System.Web.Http.dll
+E:\CSE\CV\FinalTaskAPI\BLL\bin\Debug\Newtonsoft.Json.xml
+E:\CSE\CV\FinalTaskAPI\BLL\bin\Debug\System.Net.Http.Formatting.xml
+E:\CSE\CV\FinalTaskAPI\BLL\bin\Debug\System.Web.Http.xml
+E:\CSE\CV\FinalTaskAPI\BLL\bin\Debug\System.Web.Http.Cors.xml
